@@ -1,2 +1,0 @@
-# ngo.sciaku.com
-Discription
