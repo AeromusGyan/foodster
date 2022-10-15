@@ -1,0 +1,42 @@
+.mslider-details .slider-text1 {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px ;
+    font-weight: 500;
+    line-height: 48px;
+    color: #ffb606 !important;
+    box-sizing: border-box;
+}
+.mslider-details .slider-text2{
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.mslider-details .slider-text3 p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.mslider-details {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.carousel-caption .mslider-details {
+    /* padding: 15% 20%; */
+    position:relative;
+    top:-200px;  
+    left:150px;
+}
+.mslider-caption {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.ulockd-btn-thm2 {
+    background-color: #ffb606;
+    border-color: #ffb606;
+}
