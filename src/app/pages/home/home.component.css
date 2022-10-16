@@ -36,7 +36,11 @@
     height: 100%;
     width: 100%;
 }
-.ulockd-btn-thm2 {
-    background-color: #ffb606;
-    border-color: #ffb606;
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.list-group-item>.badge {
+    float: right;
 }
