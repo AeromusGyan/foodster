@@ -9,13 +9,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { DonateformComponent } from './pages/donateform/donateform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    DonateformComponent
   ],
   imports: [
     BrowserModule,
