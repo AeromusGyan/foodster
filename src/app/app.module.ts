@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { DonateformComponent } from './pages/donateform/donateform.component';
+import { RegistrationComponent } from './pages/registration/registration.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AddFamilyComponent } from './pages/add-family/add-family.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DonateformComponent } from './pages/donateform/donateform.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    DonateformComponent
+    DonateformComponent,
+    RegistrationComponent,
+    LoginComponent,
+    AddFamilyComponent
   ],
   imports: [
     BrowserModule,
