@@ -13,6 +13,8 @@ import { DonateformComponent } from './pages/donateform/donateform.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AddFamilyComponent } from './pages/add-family/add-family.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { AddFamilyComponent } from './pages/add-family/add-family.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

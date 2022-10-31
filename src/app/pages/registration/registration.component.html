@@ -1,99 +1,128 @@
 
-
+<!-- {{registration.value|json}} -->
 <div class="container mt10">
     <div class="row">
         <div class="col-md-12">
             <mat-card>
                 <h1 class="text-center">Registration Form</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline" st>
-                            <mat-label>Username</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>First Name</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Last Name</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Password</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>E-mail</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                   
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Phone no.</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field class="address" appearance="outline">
-                            <mat-label>Address</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field class="address" appearance="outline">
-                            <mat-label>Address</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>City/State</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Pin Code</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                </div>   
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <button mat-raised-button color="accent">Sign Up</button>
-                    </div>
-                </div>                  
+                <form [formGroup]="registration" (ngSubmit)="SignUp()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline" st>
+                                <mat-label>Username</mat-label>
+                                <input type="text" name="username" formControlName="username" matInput placeholder="Placeholder" >
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>First Name</mat-label>
+                                <input type="text" name="firstname" formControlName="firstname" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Last Name</mat-label>
+                                <input type="text" name="lastname" formControlName="lastname" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input  type="text" name="password" formControlName="password" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>E-mail</mat-label>
+                                <input  type="text" name="email" formControlName="email" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                       
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Phone no.</mat-label>
+                                <input  type="text" name="contact" formControlName="contact" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-12">
+                            <mat-divider></mat-divider>
+                            <h3><strong>Address</strong></h3> 
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>House No/Building</mat-label>
+                                <input  type="text" name="house_no" formControlName="house_no" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>City/State/Villege</mat-label>
+                                <input  type="text" name="city" formControlName="city" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Post Office</mat-label>
+                                <input  type="text" name="post_office" formControlName="post_office" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Street/Road/Lane</mat-label>
+                                <input  type="text" name="road" formControlName="road" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div> -->
+                        <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Area/Locality/Sector</mat-label>
+                                <input  type="text" name="locality" formControlName="locality" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Landmark</mat-label>
+                                <input  type="text" name="landmark" formControlName="landmark" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Pin Code</mat-label>
+                                <input  type="text" name="pincode" formControlName="pincode" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        
+                        <div class="col-md-12 text-center">
+                            <button mat-raised-button color="accent">Sign Up</button>
+                        </div>
+                    </div> 
+                </form>                   
             </mat-card>
         </div>
     </div>
