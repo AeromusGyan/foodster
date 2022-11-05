@@ -1,0 +1,31 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-card>
+                <h1>All Donation List</h1>
+                <!-- {{donationData|json}} -->
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Food Description</th>
+                        <th>FDO</th>
+                        <th>No. Of Food</th>
+                        <th>Pick Up Location</th>
+                        <th>Donation Date</th>
+                    </tr>
+                    <tr *ngFor="let p of donationData;index as i">
+                        <td>{{i+1}}
+                            <img class="image" src="{{imgUrl}}/{{p.image}}" alt="">
+                        </td>
+                        <td>{{p.food_description}}</td>
+                        <td>{{p.member.username}}</td>
+                        <td>{{p.no_of_food}}</td>
+                        <td>{{p.pick_up_location}}</td>
+                        <td>{{p.date_of_donation |date}}</td>
+                    </tr>
+                </table>
+            </mat-card>
+        </div>
+    </div>
+</div>

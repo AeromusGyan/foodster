@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-card>
+                <h1>All Needy Peoplle</h1>
+                <!-- {{peopleData|json}} -->
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Pincode</th>
+                        <th>Total Peroson</th>
+                    </tr>
+                    <tr *ngFor="let p of peopleData;index as i">
+                        <td>{{i+1}}</td>
+                        <td>{{p.name_of_needy_people}}</td>
+                        <td>{{p.address}}</td>
+                        <td>{{p.city}}</td>
+                        <td>{{p.pincode}}</td>
+                        <td>{{p.no_of_person}}</td>
+                    </tr>
+                </table>
+            </mat-card>
+        </div>
+    </div>
+</div>

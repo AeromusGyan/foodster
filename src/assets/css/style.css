@@ -46,7 +46,6 @@ Tag: causes, charity, church, charity agency, charity html template, donate, don
 /* ---------- FOOTER SECTION  ---------- */
   /* INNER PAGES START HERE */
 
-
 /* ----- BODY CONTENT ----- */
 body {
   background-attachment: fixed;
@@ -2603,8 +2602,8 @@ article.ulockd-pd-content {
 
 /* ---------- FEATURE SERVICE SECTION  ---------- */
 .ulockd-fservice {
-  padding-bottom: 90px;
-  padding-top: 90px;
+  padding-bottom: 40px;
+  /* padding-top: 40px; */
 }
 .ulockd-fservice.ulockd-ipage {
   padding-bottom: 10px;
@@ -2834,8 +2833,8 @@ article.ulockd-pd-content {
   background-color: #e1e1e1;
   margin-top: -10px;
   position: relative;
-  padding-bottom: 90px;
-  padding-top: 90px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .ulockd-about-two:before {
   background-color: rgba(255, 255, 255, 0.88);

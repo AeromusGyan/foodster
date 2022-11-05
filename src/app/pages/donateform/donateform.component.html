@@ -4,47 +4,52 @@
         <div class="col-md-12">
             <mat-card>
                 <h1 class="text-center">Donation Form</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline" st>
-                            <mat-label>No. Of Food</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Name Of Food</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Quantity</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                   
-                    <div class="col-md-6">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Pick-Up Location</mat-label>
-                            <input matInput placeholder="Placeholder">
-                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>     
-                    </div>
-                    <div class="col-md-6">
-                            <input type="file" multiple placeholder="Placeholder"> 
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <button mat-raised-button color="accent">Donate Now</button>
-                    </div>
-                </div>         
+                <!-- {{donateForm.value|json}} -->
+                <form [formGroup]="donateForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline" st>
+                                <mat-label>No. Of Food</mat-label>
+                                <input type="number" name="no_of_food" formControlName="no_of_food" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Food Description</mat-label>
+                                <textarea type="text" name="food_description" formControlName="food_description" matInput placeholder="Placeholder"></textarea>
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Quantity</mat-label>
+                                <input type="number" name="quantity" formControlName="quantity" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Pick-Up Location</mat-label>
+                                <input type="text" name="address" formControlName="pick_up_location" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                                <input type="file" value="select" placeholder="Placeholder" (change)="onFileSelected($event)"> 
+                        </div>
+                        <div class="col-md-12">
+                            <mat-checkbox class="example-margin"  (change)="onChange($event)">Accept all terms & conditions.</mat-checkbox>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button mat-raised-button color="accent" (click)="donateNow()">Donate Now</button>
+                        </div>
+                    </div>    
+                </form>     
             </mat-card>
         </div>
     </div>

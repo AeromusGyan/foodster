@@ -2,3 +2,9 @@
 .mt10{
     margin-top: 50px;
 }
+.food-btn{
+    background-color: #ffb606 !important;
+}
+.pointer{
+    cursor: pointer;
+}

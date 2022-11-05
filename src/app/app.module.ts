@@ -15,6 +15,12 @@ import { LoginComponent } from './pages/login/login.component';
 import { AddFamilyComponent } from './pages/add-family/add-family.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { authInterceptorProviders } from './services/auth.interceptor';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-dashboard.component';
+import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
+import { AllNeedyPeopleComponent } from './pages/admin/all-needy-people/all-needy-people.component';
+import { AllDonationListComponent } from './pages/admin/all-donation-list/all-donation-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,12 @@ import { HttpClientModule } from '@angular/common/http';
     DonateformComponent,
     RegistrationComponent,
     LoginComponent,
-    AddFamilyComponent
+    AddFamilyComponent,
+    ProfileComponent,
+    AdminDashboardComponent,
+    SidebarComponent,
+    AllNeedyPeopleComponent,
+    AllDonationListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

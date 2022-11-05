@@ -70,9 +70,17 @@
                               </mat-form-field>     
                         </div>
                         <div class="col-md-6">
-                            <mat-form-field appearance="outline">
-                                <mat-label>City/State/Villege</mat-label>
-                                <input  type="text" name="city" formControlName="city" matInput placeholder="Placeholder">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Area/Locality/Sector</mat-label>
+                                <input  type="text" name="locality" formControlName="locality" matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                              </mat-form-field>     
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field class="address" appearance="outline">
+                                <mat-label>Landmark</mat-label>
+                                <input  type="text" name="landmark" formControlName="landmark" matInput placeholder="Placeholder">
                                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                                 <mat-hint>Hint</mat-hint>
                               </mat-form-field>     
@@ -94,17 +102,9 @@
                               </mat-form-field>     
                         </div> -->
                         <div class="col-md-6">
-                            <mat-form-field class="address" appearance="outline">
-                                <mat-label>Area/Locality/Sector</mat-label>
-                                <input  type="text" name="locality" formControlName="locality" matInput placeholder="Placeholder">
-                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                                <mat-hint>Hint</mat-hint>
-                              </mat-form-field>     
-                        </div>
-                        <div class="col-md-6">
-                            <mat-form-field class="address" appearance="outline">
-                                <mat-label>Landmark</mat-label>
-                                <input  type="text" name="landmark" formControlName="landmark" matInput placeholder="Placeholder">
+                            <mat-form-field appearance="outline">
+                                <mat-label>City/State/Villege</mat-label>
+                                <input  type="text" name="city" formControlName="city" matInput placeholder="Placeholder">
                                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                                 <mat-hint>Hint</mat-hint>
                               </mat-form-field>     
@@ -119,7 +119,7 @@
                         </div>
                         
                         <div class="col-md-12 text-center">
-                            <button mat-raised-button color="accent">Sign Up</button>
+                            <button mat-raised-button class="food-btn" >Sign Up</button>
                         </div>
                     </div> 
                 </form>                   
