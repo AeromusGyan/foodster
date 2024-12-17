@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ngo.sciaku.com",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
