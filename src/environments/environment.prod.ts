@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  // baseUrl : "http://localhost:8080",
-  baseUrl:"https://foodster0.herokuapp.com",
-  imgUrl : 'https://sciaku.com/assets/images/profile'
+  // baseUrl : "http://localhost:9090",
+  baseUrl:"https://foodapi.sciaku.com",
+  imgUrl : 'https://foodster.sciaku.com/assets/foodster/images'
 };
